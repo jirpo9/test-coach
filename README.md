@@ -71,15 +71,14 @@ Store all sensitive keys and tokens in the `.env` file. See `.env.example` for r
    ```
 
 
+## Tento projekt, nazvaný "test-coach", je nástroj pro automatizované testování a opravy kódu s využitím AI (konkrétně OpenAI API). Hlavní funkce zahrnují:
 
-   Tento projekt, nazvaný "test-coach", je nástroj pro automatizované testování a opravy kódu s využitím AI (konkrétně OpenAI API). Hlavní funkce zahrnují:
-
-Generování automatických testů pro Python moduly
-Spouštění testů s analýzou pokrytí kódu
-Navrhování oprav kódu na základě neúspěšných testů a chybových hlášek
+### Generování automatických testů pro Python moduly
+### Spouštění testů s analýzou pokrytí kódu
+### Navrhování oprav kódu na základě neúspěšných testů a chybových hlášek
 
 Jak s kódem pracovat (krok po kroku)
-1. Nastavení projektu
+**1. Nastavení projektu
 
 Naklonujte repozitář do svého prostředí
 Vytvořte virtuální prostředí: python -m venv venv
@@ -98,7 +97,7 @@ Plus další proměnné podle potřeby (GITHUB_TOKEN, API_KEY, DB_PASSWORD)
 
 
 
-2. Použití nástroje pro testování vašeho kódu
+**2. Použití nástroje pro testování vašeho kódu
 a) Generování testů pro váš modul
 
 Importujte nástroj ve svém skriptu:
@@ -129,7 +128,7 @@ pythonfix_suggestion = fix_code('test_function_failed', 'AssertionError: expecte
 
 Výsledkem je návrh opravy kódu nebo testu
 
-3. Použití serveru
+**3. Použití serveru
 Alternativně můžete server spustit přímo:
 python -m fastmcp_server.server
 Tím se spustí server, který naslouchá na stdin/stdout, což je užitečné pro integraci s jinými nástroji.
