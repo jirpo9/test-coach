@@ -79,7 +79,4 @@ Store all sensitive keys and tokens in the `.env` file. See `.env.example` for r
 
 
 
-**3. Použití serveru
-Alternativně můžete server spustit přímo:
-python -m fastmcp_server.server
-Tím se spustí server, který naslouchá na stdin/stdout, což je užitečné pro integraci s jinými nástroji.
+
